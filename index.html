@@ -1,238 +1,571 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Image/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./fontawesome/css/all.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>TH9 SHOP</title>
-  </head>
-  <body>
-    <div class="top">
-      <!-- support -->
-      <div class="left">
-        <div><a href="">About us</a></div>
-        <div><a href="">Contact us</a></div>
-        <div><a href="">FAQs</a></div>
-        <div><a href="">Blogs</a></div>
-      </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Futura ,sans-serif;
+}
 
-      <!-- link order -->
-      <div class="right">
-        <div class="space">
-          <a href="https://www.facebook.com/nguyenlethanhhuy712" target="_blank"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
-        </div>
-        <div class="space">
-          <a
-            href="https://www.instagram.com/nguyenlethanhhuy2003/"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
+:root {
+    --black-color: #000;
+    --red-color: rgb(245, 22, 6);
+    --white-color: #e0e0e0;
+    --green-color: rgb(61, 252, 4);
+    --blue-color: rgb(24, 99, 240);
+    --yellow-color: rgb(238, 222, 3);
+    --silver-color: rgb(105, 99, 99);
+    --lightblack-color: rgb(39, 38, 38);
+    --purple-color: rgba(228, 10, 235, 0.623);
+    --lightblue-color: rgb(133, 202, 219);
+    --lightyellow-color:rgb(209, 194, 55);
+    --lightgreen-color: rgb(84, 202, 147);
+    --lama-color: #CDFF1D;
+}
 
-        <!-- nation -->
-        <div class="image-nation"><img src="./Image/coVN.jpg" alt="" /></div>
-        <div class="image-nation1">VIETNAM</div>
-      </div>
-    </div>
 
-    <!-- Stop top ------------------------------------- -->
-    <header>
-      <!-- Search-box -->
-      <div class="space-search">
-        <div class="search-box">
-          <input type="text" class="search-input" placeholder="Tìm kiếm" />
-          <button class="search-btn">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-        <script src="./JS/script.js"></script>
-      </div>
+/* topp------------------------------------------ */
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-family: Futura,sans-serif;
+    font-size: 13.6px;
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    letter-spacing: .025em;
+}
 
-      <!-- The menu and logo -->
-      <div class="menu">
-        <li>
-          <a href="#" id="element-menu"
-            >GU THIẾT KẾ 4MEN 18+ <i class="fas fa-angle-down"></i
-          ></a>
-          <ul class="sub-menu">
-            <ul>
-              <li><a href="#">Gu Thần Cổ Đại</a></li>
-              <li><a href="#">Gu Ngân Hà</a></li>
-              <li><a href="#">Gu Dị Biệt</a></li>
-              <li><a href="#">Gu Cổ Kính</a></li>
-              <li><a href="#">Gu Y Nguyên Bản 18+</a></li>
-            </ul>
-          </ul>
-        </li>
-        <li>
-          <a href="#" id="element-menu"
-            >GU ĐƠN GIẢN 4ALL <i class="fas fa-angle-down"></i
-          ></a>
-          <ul class="sub-menu">
-            <li><a href="#">Áo Thun Đơn Giản</a></li>
-            <li><a href="#">Áo Khoác Đơn Giản</a></li>
-            <li><a href="#">Áo Sơ Mi Đơn Giản</a></li>
-            <li><a href="#">Quần Dài Đơn Giản</a></li>
-            <li><a href="#">Quần Short Đơn Giản</a></li>
-          </ul>
-        </li>
-        <li>
+.top a {
+    color: var(--black-color);
+}
 
-          <!-- --------------logo---------------------- -->
-          <a href="#"
-            ><img src="./Image/logo_transparent.png" alt="TH9 SHOP"
-          /></a>
-        </li>
+/* left------------------------------------------------------ */
+.left > div {
+    margin: 10px 15px;
+    padding: 0px 20px 0px 0px ;
+    border-right: 1px solid var(--silver-color);
+    cursor: pointer;
+}
 
-        <!-- --------------------MENU-------------------- -->
-        <li>
-          <a href="#" id="element-menu">GU UNISEX GENZ <i class="fas fa-angle-down"></i></a>
-          <ul class="sub-menu">
-            <li><a href="#">Gu Linh Vật</a></li>
-            <li><a href="#">Gu Cá Tính 18+</a></li>
-            <li><a href="#">Gu Y Nguyên Bản 18-</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" id="element-menu">GU CỔ ĐIỂN 199X <i class="fas fa-angle-down"></i></a>
-          <ul class="sub-menu">
-            <li><a href="#">Gu Năng Động</a></li>
-            <li><a href="#">Gu Đơn Giản</a></li>
-            <li><a href="#">Gu Hàn</a></li>
-          </ul>
-        </li>
+.left {
+    display: flex;
+    flex: 4;
+}
 
-          <!-- -----------------MENU-FULL-------------- -->
-        <li>
-          <a href="#"
-          id="element-menu"><i class="fas fa-bars"></i> <i class="fas fa-angle-down"></i
-          ></a>
-          <div class="menu-full">
-                  <!-- 1--------------------------------- -->
-            <ul class="menu-synthetic">
-                <li id="importan" >ÁO THUN</li>
-                <li><a href="#">Áo Thun Form Tiêu Chuẩn</a></li>
-                <li><a href="#">Áo KThun Form Rộng</a></li>
-                <li><a href="#">Áo Thun 3 Lỗ</a></li>
-                <li><a href="#">Áo Thun Cổ Trụ</a></li>
-                <li><a href="#">Áo Thun Sweater</a></li>
-              </ul>
-                  <!-- 2------------------------------------------- -->
-              <ul class="menu-synthetic2">
-                <li id="importan" >ÁO KHOÁC</li>
-                <li><a href="#">Áo Khoác Thiết Kế</a></li>
-                <li><a href="#">Áo Khoác Đơn Giản</a></li>
-                <li><a href="#">Áo Khoác Thể Thao</a></li>
-                <li><a href="#">Áo Hoodie</a></li>
-                <li><a href="#">Áo Khoác Có Nón</a></li>
-              </ul>
-                  <!-- 3----------------------------------------------- -->
-              <ul class="menu-synthetic3">
-                <li id="importan" >ÁO SƠ MI</li>
-                <li><a href="#">Áo Sơ Mi Tay Dài</a></li>
-                <li><a href="#">Áo Sơ Mi Tay Ngắn</a></li>
-              </ul>
-                  <!-- 4----------------------------------------- -->
-              <ul class="menu-synthetic4">
-                <li id="importan" >QUẦN JEAN</li>
-                <li><a href="#">Quần Jean Đơn Giản</a></li>
-                <li><a href="#">Quần Jean Cá Tính</a></li>
-                <li id="importan">QUẦN SHORT</li>
-              </ul>
-                    <!-- 5-------------------------------------------------- -->
-              <ul class="menu-synthetic5">
-                <li id="importan" >QUẦN DÀI</li>
-                <li><a href="#">Quần Jogger</a></li>
-                <li><a href="#">Quần Tây</a></li>
-                <li><a href="#">Quần Loose Pants</a></li>
-                <li><a href="#">Áo Hoodie</a></li>
-                <li><a href="#">Áo Khoác Có Nón</a></li>
-              </ul>
-                      <!-- 6------------------------------------------------------ -->
-              <ul class="menu-synthetic6">
-                <li id="importan" >BALO - TÚI</li>
-                <li><a href="#">BaLo Thời Trang</a></li>
-                <li><a href="#">Túi Đeo</a></li>
-                <br>
-                <li id="importan">GIÀY DẸP SANDAL</li>
-              </ul>
-                      <!-- 7------------------------------------------------------ -->
-              <ul class="menu-synthetic7">
-                <li id="importan" >PHỤ KIỆN</li>
-                <li><a href="#">Nón</a></li>
-                <li><a href="#">Quần Lót</a></li>
-                <li><a href="#">Tất - Vớ</a></li>
-                <li><a href="#">Dây Nịt Da</a></li>
-                <li><a href="#">Ví Da</a></li>
-                <li><a href="#">Đồng Hồ</a></li>
-                <li><a href="#">Dây Chuyền</a></li>
-              </ul>
-                      <!-- 8------------------------------------------------------ -->
-              <ul class="menu-synthetic8">
-                <li id="importan" >GIÁ MỚI SẮP TẾT</li>
-                  <br>
-                <li id="importan" >BÁN CHẠY</li>
-                
-              </ul>
-                        <!-- 9------------------------------------------------------ -->
-              <ul class="menu-synthetic9">
-                <li id="importan" >OUTLET</li>
-              </ul>
-                        <!-- 10------------------------------------------------------ -->
-              <ul class="menu-synthetic10">
-                <li id="importan" >SALE 50%</li>
-              </ul>
-          </div>
-        </li>
-      </div>
+.left  a {
+    text-decoration: none;
+    color: var(--black-color);
+}
 
-      <!-- user and bag -->
-      <div class="other">
-        <li>
-          <a href="#"> <i class="fas fa-user"></i></a>
-          <a href="#"> <i class="bx bxs-shopping-bag"></i></a>
-        </li>
-      </div>
-    </header>
+/* right---------------------------------------------------------- */
+.right {
+    display: flex;
+    flex: 0.7;
+}
 
-    <section id="Slide">
-      <div class="slide">
-        <!-- -------------icon-display----------------- -->
-        <div class="float-contact">
-          <button class="hotline button"><a href="tel:0868073554"> <i class="fas fa-phone" ></i></a></button>
-        </div>
-           <!-- -------------icon-display----------------- -->
-        <div class="float-contact2">
-          <button class="hotline button" id="hotline-button2"><a href="mailto:nguyenlethanhhuy2003@gmail.com"> <i class="far fa-envelope"></i></a></button>
-        </div>
+.space {
+    margin: 7px 12px;
+    font-size: 20px;
+}
 
-        <div class="aspect-ratio-169">
-            <img src="./Image/slide1-min.png" alt="">
-            <img src="./Image/model5-min.jpg" alt="">
-            <img src="./Image/model4-min.jpg" alt="">
-            <img src="./Image/model6-min.jpg" alt="">
-            <img src="./Image/model3-min.jpg" alt="">
-        </div>
-      </div>
+/* nation---------------------------------------------------------------- */
+.image-nation img {
+    border-radius: 50%;
+    height: 20px;
+    width: 21px;
+    margin-top: 2px;
+}
 
-      <div class="dot-container">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </section>
-  </body>
-  <script src="./JS/script2.js">
-  </script>
-</html>
+.image-nation {
+    margin-top: 7px;
+    margin-left: 17px;
+
+}
+.image-nation1 {
+    margin-top: 12px;
+    margin-left: 5px;
+
+}
+/* stop top------------------------------------------------------------ */
+
+header {
+    display: flex;
+    font-family: Futura , sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 12px 30px;
+    height: 110px;
+    background: linear-gradient(to right, var(--lightyellow-color) ,var(--lightblue-color) ,var(--lightgreen-color));
+    border: 2px solid var(--white-color);
+
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a{
+    text-decoration: none;
+}
+
+/* search-box----------------------------------------- */
+.search-box {
+	width: 50px;
+	height: 30px;
+	background-color: var(--white-color);
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s all ease;
+	border-radius: 15px;
+}
+
+.search-box.open {
+	width: 300px;
+}
+
+/* input------------------------------------------------- */
+.search-input {
+	width: 115%;
+	height: 60%;
+    outline: none;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	color: var(--silver-color);
+	padding: 20px 90px 20px 20px;
+	font-size: 15px;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+.space-search {
+    width: 215px;
+}
+
+.search-btn {
+	color: var(--silver-color);
+	outline: none;
+	border: none;
+	width: 50px;
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+/* ----------logo-------------------- */
+.menu img {
+    width: 160px;
+    height: 108px;
+    margin-top: 7px;
+    border-radius: 50%;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    font-size: 15px;
+    margin-left: -120px;
+}
+
+/* -----------icon-user-bags---------------- */
+.other li a{
+    font-size: 24px;
+    flex: 0.5;
+    padding: 0 15px;
+    color: var(--black-color);
+    border-left: 1px solid var(--silver-color);
+}
+
+.menu > li {
+    padding: 15px 10px;
+    position: relative;
+    font-weight: 400;
+}
+
+.menu > li  a{
+    color: var(--black-color);
+    display: block;
+}
+
+.menu , .other , .space-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* sub-menu */
+.sub-menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.sub-menu {
+    position: absolute;
+    width: 200px;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    top: 50px;
+    transition: all 0.5 ease;
+    background-color: var(--lightblack-color);
+    line-height: 30px;
+}
+
+
+
+.sub-menu li a {
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+
+/* ------------------fix-menu_full */
+.menu > li:hover #element-menu,.menu > li:hover #element_menu_vip {
+    color: var(--red-color);
+    border-bottom: 3px solid var(--purple-color);
+    margin-top: 3px;
+}
+
+#element_menu_vip {
+    margin-top: 17px;
+}
+
+.menu > li:hover #element_menu_vip {
+    margin-top: 20px;
+}
+
+
+.sub-menu li:hover a {
+    background: var(--white-color);
+    color: var(--black-color);
+    letter-spacing: normal;
+    transition: 0s all;
+    padding: 5px 10px;
+}
+
+.menu > li:hover .sub-menu {
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 100;
+    top: 30px;
+    margin-top: 15px;
+}
+
+/* ------------menu-full--------------------- */
+
+.menu-synthetic li a ,
+ .menu-synthetic2 li a,
+  .menu-synthetic3 li a, 
+   .menu-synthetic4 li a,
+    .menu-synthetic5 li a,
+     .menu-synthetic6 li a,
+      .menu-synthetic7 li a ,
+       .menu-synthetic8 li a ,
+        .menu-synthetic9 li a ,
+         .menu-synthetic10 li a {
+    color: var(--white-color);
+}
+
+#importan {
+    font-weight: bold;
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+.menu-full {
+    display: inline-block;
+}
+
+.menu-synthetic ,
+ .menu-synthetic2 ,
+  .menu-synthetic3 ,
+   .menu-synthetic4 ,
+    .menu-synthetic5 ,
+     .menu-synthetic6 ,
+      .menu-synthetic7 ,
+       .menu-synthetic8 ,
+        .menu-synthetic9 ,
+        .menu-synthetic10  {
+    position: absolute;
+    padding: 1rem!important;
+    height: 260px;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 100;
+    top: 70px;
+    transition: all 0.5 ease;
+    background-color: var(--lightblack-color);
+    line-height: 30px;
+} 
+
+.menu-synthetic {
+    margin-left: -1187px;
+    width: 250px;
+}
+
+.menu-synthetic2 { 
+    margin-left: -990px;
+    width: 300px;
+}
+.menu-synthetic3 {
+    margin-left: -833px;
+}
+
+.menu-synthetic4 {
+    margin-left: -676px;
+}
+
+.menu-synthetic5 {
+    margin-left: -506px;
+}
+
+.menu-synthetic6 {
+    margin-left: -352px;
+}
+
+.menu-synthetic7 {
+    margin-left: -165px;
+}
+
+.menu-synthetic8 {
+    width: 350px;
+    margin-left: -55px;
+}
+
+.menu-synthetic9 {
+    margin-left: 115px;
+}
+
+.menu-synthetic10 {
+    margin-left: 210px;
+    width: 132px;
+}
+
+/* -------------hover--------------- */
+
+.menu > li:hover .menu-synthetic ,
+ .menu > li:hover .menu-synthetic2 ,
+  .menu > li:hover .menu-synthetic3 ,
+   .menu > li:hover .menu-synthetic4 ,
+    .menu > li:hover .menu-synthetic5 ,
+     .menu > li:hover .menu-synthetic6 ,
+      .menu > li:hover .menu-synthetic7 , 
+       .menu > li:hover .menu-synthetic8 ,  
+        .menu > li:hover .menu-synthetic9 , 
+         .menu > li:hover .menu-synthetic10  {
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 100;
+    top: 47px;
+    margin-top: 15px;
+}
+.menu-synthetic li:hover a ,
+ .menu-synthetic2 li:hover a ,
+  .menu-synthetic3 li:hover a ,
+   .menu-synthetic4 li:hover a ,
+    .menu-synthetic5 li:hover a ,
+     .menu-synthetic6 li:hover a ,
+      .menu-synthetic7 li:hover a ,
+       .menu-synthetic8 li:hover a ,
+        .menu-synthetic9 li:hover a ,
+         .menu-synthetic10 li:hover a {
+    color: var(--red-color);
+    letter-spacing: normal;
+    transition: 0s all;
+}
+
+/* ------------------slide------------------- */
+
+#Slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--black-color);
+    overflow: hidden;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 0px 50px;
+  }
+  
+.float-contact .hotline , .float-contact2 .hotline {
+    background: var(--red-color) !important;
+    border-radius: 70%;
+    padding: 10px 14px 10px 15px;
+    display: block;
+    border: none;
+    margin: 10px;
+}
+
+.float-contact .hotline a ,.float-contact2 .hotline a {
+    color: var(--white-color);
+}
+
+.float-contact {
+    position: fixed;
+    top: 83%;
+    right: 50px;
+    z-index: 99999;
+}
+
+.float-contact2 {
+    position: fixed;
+    top: 90%;
+    right: 50px;
+    z-index: 99999;
+}
+
+.dot-container {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(180, 178, 178);
+    margin: 7px 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--black-color);
+}
+
+
+/* -----------------Footer------------------------------------------------ */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0px 50px 0px;
+}
+
+.app-download {
+    margin: 50px;
+}
+
+.app-download img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.app-container p {
+    font-family: Helvetica, sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--black-color);
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.app-container button {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.app-container button i {
+    background: white;
+    font-size: 1.5em;
+    color: var(--silver-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.app-container button:hover i{
+    color: var(--black-color);
+}
+
+footer {
+    background: url('../Image/shirt.jpg');
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+}
+
+.footer-top li a{
+    text-decoration: none;
+    color: var(--green-color);
+    line-height: 1.7;
+}
+
+.footer-top li {
+    list-style-type: square;
+}
+
+
+
+.logo-footer img {
+    width: 180px;
+    border-radius: 50%;
+}
+/* ---------------------logo--------------------------------------------------------------------- */
+.logo-footer {
+    flex: 1;
+    margin: 25px 110px;
+}
+/* -----------------chính sách------------------------------------------------------------------- */
+.footer-top {
+    flex: 2;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+/* -----------text-footer----------------- */
+.text-footer {
+    flex: 3;
+}
+
+.text-footer div {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 138px;
+    line-height: 1.7;
+    color: var(--lama-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    /* background-color: aliceblue;
+    text-align: justify; */
+}
+
+
+
+
+
+
+
+
+
+
+
