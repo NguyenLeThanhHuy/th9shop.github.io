@@ -542,6 +542,11 @@ footer {
     margin: 7px 0;
     font-size: 17px;
 }
+
+.footer-top h2 a {
+    text-decoration: none;
+    color: var(--red-color);
+}
 /* -----------text-footer----------------- */
 .text-info  div  p{
     color: var(--white-color);
