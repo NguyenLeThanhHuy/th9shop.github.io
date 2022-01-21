@@ -340,8 +340,8 @@ header a{
 }
 
 .menu-synthetic10 {
-    margin-left: 210px;
-    width: 132px;
+    margin-left: 207px;
+    width: 134px;
 }
 
 /* -------------hover--------------- */
@@ -513,6 +513,7 @@ footer {
     background-size: cover;
     background-attachment: fixed; 
     display: flex;
+    overflow: hidden;
 }
 
 .footer-top li a{
@@ -549,14 +550,13 @@ footer {
 
 .text-footer div {
     width: 400px;
-    margin-top: 10px;
     margin-left: 138px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: var(--lama-color);
     font-weight: bold;
     text-transform: uppercase;
-    /* background-color: aliceblue;
-    text-align: justify; */
+     background-color: var(--purple-color);
+     padding: 10px; 
 }
 
 
